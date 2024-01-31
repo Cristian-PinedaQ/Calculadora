@@ -1,13 +1,29 @@
 .App {
-  height: 100vh;
   padding-top: 10px;
-  background-color: #1b1b32;
   font-family: lato, sans-serif;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+	height: 100vh;
+	background: linear-gradient(334deg, #6b97f7, #1f0345, #4b2e02);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
 }
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .logo-contenedor {
   width: 100%;
